@@ -1,0 +1,32 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>上传文件</title>
+  </head>
+  <body>
+    <div style="padding: 30px 50px; overflow: hidden; margin-top: 300px;">
+      <button class="success">成功消息</button>
+      <button class="warning">警告消息</button>
+      <button class="error">错误消息</button>
+      <button class="loading">加载信息</button>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="jquery-kk-message/message.js"></script>
+  <script type="text/javascript">
+    $('.success').click(function () {
+      kkMessgae.success('这是一条成功的提示');
+    });
+    $('.warning').click(function () {
+      kkMessgae.warning('这是一条警告的提示');
+    });
+    $('.error').click(function () {
+      kkMessgae.error('对方不想说话，并且向你抛出了一个异常');
+    });
+    $('.loading').click(function () {
+      kkMessgae.loading('加载中...');
+    });
+  </script>
+</html>
